@@ -1,0 +1,159 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #000;
+}
+.nav__container {
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  justify-content: space-between;
+}
+
+.link_container {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+}
+
+.links {
+  margin: 0 2rem;
+  color: #000;
+}
+
+.btn {
+  background: yellow;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+}
+
+.hero_container {
+  display: flex;
+  padding: 0 5rem;
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.btn_container {
+  margin: 2rem 0;
+}
+.hero_title {
+  font-size: 4rem;
+  font-style: normal;
+
+  margin: 0 0 5px 0;
+}
+
+.hero_subtitle {
+  width: 55%;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.hero_img {
+  height: 400px;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+/* FEATURES */
+.features_container {
+  text-align: center;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features_title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.pricing_row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pricing_card {
+  width: 40%;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  border: 2px solid yellow;
+}
+
+.card_img {
+  height: 100px;
+}
+
+.card_title {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+h5 {
+  font-size: 1.5rem;
+  color: #000;
+}
+.features_content {
+  display: flex;
+  text-align: start;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.features_content ul {
+  margin: 0;
+  width: 50%;
+}
+
+.features_content_img {
+  height: 300px;
+}
+
+.list_container {
+  padding-left: 3rem;
+}
+
+.list_container li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+footer {
+  padding: 2rem;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_container a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.copyright {
+  text-align: center;
+}

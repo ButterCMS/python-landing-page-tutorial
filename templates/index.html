@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="nav__container">
+      <h1 class="logo">TIMELY</h1>
+      <ul class="link_container">
+        <li class="links">Product</li>
+        <li class="links">Blog</li>
+        <li class="links">Careers</li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero_container">
+      <div class="hero_content">
+        <h2 class="hero_title">{{hero.hero_title}}</h2>
+        <div class="subtitle_container">
+          <p class="hero_subtitle">{{hero.hero_subtitle}}</p>
+        </div>
+
+        <div class="btn_container">
+          <button class="btn btn_hero">Get Started</button>
+        </div>
+      </div>
+
+      <div class="img_container">
+        <img src="{{hero.hero_img}}" alt="" class="hero_img" />
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features_container">
+      <h2 class="features_title">Pricing</h2>
+      <div class="pricing_row">
+        {% for card in pricing %}
+        <div class="pricing_card">
+          <img src="{{card.pricing_card_img}}" alt="" class="card_img" />
+          <h3 class="card_title">{{card.pricing_card_title}}</h3>
+
+          <p>{{card.pricing_card_subtitle}}</p>
+        </div>
+
+        {% endfor %}
+      </div>
+
+      <h2 class="features_title">TIMELY FEATURES</h2>
+
+      {% for features in features %}
+      <div class="features_content">
+        <img
+          src="{{features.features_img}}"
+          alt=""
+          class="features_content_img"
+        />
+
+        <ul>
+          <div class="list_container">
+            <li>{{features.features_subtitle_1}}</li>
+            <li>{{features.features_subtitle_2}}</li>
+            <li>{{features.features_subtitle_3}}</li>
+          </div>
+        </ul>
+      </div>
+
+      {% endfor %}
+    </section>
+    <footer>
+      <div class="footer_container">
+        <h1 class="logo">TIMELY</h1>
+
+        <a>Blog</a>
+        <a>Demo</a>
+        <a>Career</a>
+        <a>About us</a>
+      </div>
+
+      <div class="copyright">{{footer.footer_text}}</div>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
